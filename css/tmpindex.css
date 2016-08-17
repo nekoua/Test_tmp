@@ -563,46 +563,49 @@ body {
 	width: 100%;
 	margin: 0 0 70px 0;
 	min-height: 300px;
-	background: orange;
 }
 .experience__card {
-	margin: 0 54px 70px 54px;
-	background: grey;
+	margin: 0 54px 30px 54px;
 	width: 752px;
 	min-height: 100px;
 	overflow: hidden;
 	border-radius: 3px;
 	display: flex;
+	background-color: #EEEEEE;
 }
 .time__worked {
-	background: blue;
 	display: block;
 	float: left;
  	font-size: 22px;
 	color: #ffffff;
-	width: 20%;
+	margin: 0 30px 0 0;
+	padding: 16px 24px 16px 24px;
 	text-align: center;
+	background-color: #B0BEC5;
 }
 .time__worked hr {
-	height: 4px;
+	height: 2px;
 	border: none;
 	background: #ffffff;
 	margin: 10px 16px 10px 16px;
 }
-.company__info {
-	background: brown;
-	width: 80%;
-	float: right;
-																																					px;
 
+.company__info {
+	float: right;
+	padding: 0 30px 10px 30px;
 }
 .company__info h4 {
-	margin: 0 auto;
-	background: lightgrey;
-	
+	margin: 16px auto;
+	font-size: 24px;
+	color: #333;
+	font-weight: 400;
 }
 .company__info h5 {
 	margin: 0;
+	font-size: 18px;
+	color: #777;
+	font-weight: 300;
+	padding: 0 0 0 16px;
 }
  
 .experience__cont .go-btn {
