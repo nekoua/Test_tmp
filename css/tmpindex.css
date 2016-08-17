@@ -25,7 +25,6 @@ body {
 }
 .main-navigation {
 	width: 310px;
-	background-color: orange;
 	float: left;
 }
 .block-former {
@@ -133,19 +132,76 @@ body {
 .about-icon {
 	background: url('../img/icon/assignment_white_72x72.png') no-repeat 50% 50%;
 }
-
-.calendar {
+/*------====== CALENDAR ======------*/
+.calendar__conteiner {
 	width: 310px;
 	height: 310px;
 	background-color: lightgrey;
 	margin: 0 0 10px 0;	
+	overflow: hidden;
+	position: relative;
 }
+.calendar td {
+	padding: 0;
+}
+.calendar__header {
+	position: relative;
+	background: #FF7043;
+	color: #fff;
+	padding: 16px 20px 16px 20px;
+	
+	z-index: 1;
+}
+.day-nov {
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.month-nov {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 300;
+}
+.calendar {
+	width: 304px;
+	min-height: 226px;
+	margin: 0 auto;
+	background: #fff;
+	color: #555;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.calendar thead {
+	color: #BF360C;
+	font-weight: 400;
+	
+}
+.calendar thead td {
+	padding: 10px 0;
+}
+.calendar td {
+	padding: 6px;
+	text-align: center;
+}
+.calendar tbody td:hover {
+	background: #FF7043;
+	color: #fff;
+	box-shadow: 0 7px 28px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.current-day {
+	color: #BF360C;
+}
+.prev-month,
+.next-month {
+	color: #cacaca;
+}
+
+/*------====== SLIDER ======------*/
 .news-slider {
 	width: 310px;
 	height: 150px;
 	background-color: lightgrey;
 }
-/*------====== SLIDER ======------*/
 .slider-block {
 	position: relative;
 	background-color: rgba(190,190,190,0.4);
