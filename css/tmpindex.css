@@ -149,8 +149,32 @@ body {
 	background: #FF7043;
 	color: #fff;
 	padding: 16px 20px 16px 20px;
-	
 	z-index: 1;
+}
+.change__month {
+	float: right;
+	margin: 5px 0px 10px 0;
+}
+.change__month span {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+	text-align: center;
+	margin: 0px 8px 0px 8px;
+	border-radius: 100%;
+}
+.change__month span:nth-child(1) {
+	background: url("..//img/icon/ic_keyboard_arrow_left_white_24dp_2x.png") no-repeat 50% 50%;
+}
+.change__month span:nth-child(2) {
+	background: url("..//img/icon/ic_keyboard_arrow_right_white_24dp_2x.png") no-repeat 50% 50%;
+}
+.change__month span:nth-child(1):hover {
+	background: #FF8A65 url("..//img/icon/ic_keyboard_arrow_left_white_24dp_2x.png") no-repeat 50% 50%;
+}
+.change__month span:nth-child(2):hover {
+	background: #FF8A65 url("..//img/icon/ic_keyboard_arrow_right_white_24dp_2x.png") no-repeat 50% 50%;
 }
 .day-nov {
 	font-size: 28px;
@@ -180,7 +204,7 @@ body {
 	padding: 10px 0;
 }
 .calendar td {
-	padding: 6px;
+	padding: 6px 10px;
 	text-align: center;
 }
 .calendar tbody td:hover {
