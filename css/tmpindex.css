@@ -390,6 +390,19 @@ body {
 .about-c-line {
 	border-color: #F44336;	
 }
+.experience-c-line::before {
+	background-color: #673AB7;	
+}
+.experience-c-line {
+	border-color: #673AB7;	
+}
+.project-c-line::before {
+	background-color: #2196F3;
+}
+.project-c-line {
+	border-color: #2196F3;	
+}
+
 /*------====== WORKBENCH SECTION ======------*/
 .workbench-section {
 	width: 860px;
@@ -697,12 +710,10 @@ body {
 	color: #ffffff;
 }
 
-
 /*--------------------------------------*/
 /*------====== CONTACT PAGE ======------*/
 /*--------------------------------------*/
  
-
 .name_header {
 	font-size: 92px;
 	line-height: 70px;
@@ -864,7 +875,24 @@ body {
   box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
 	background: #B0BEC5;
 }
-
+.social-btn-link:nth-child(2) .social-btn-icon {
+	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 1.5% 50%;	
+}
+.social-btn-link:nth-child(3) .social-btn-icon {
+	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 15.5% 50%;	
+}
+.social-btn-link:nth-child(4) .social-btn-icon {
+	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 29.5% 50%;	
+}
+.social-btn-link:nth-child(5) .social-btn-icon {
+	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 57% 50%;	
+}
+.social-btn-link:nth-child(6) .social-btn-icon {
+	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 43.5% 50%;	
+}
+.social-btn-link:nth-child(7) .social-btn-icon {
+	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 80% 50%;	
+}
 
 .main-footer {	
 	height: 50px;
@@ -877,5 +905,7 @@ body {
 	background-color: #424242;
 }
 
-
+/*--------------------------------------*/
+/*------====== EXPERIENCE PAGE ======------*/
+/*--------------------------------------*/
 
