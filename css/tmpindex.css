@@ -396,6 +396,19 @@ body {
 .experience-c-line {
 	border-color: #673AB7;	
 }
+.education-c-line::before {
+	background-color: #03A9F4;	
+}
+.education-c-line {
+	border-color: #03A9F4;	
+}
+.skills-c-line::before {
+	background-color: #FFC107;	
+}
+.skills-c-line {
+	border-color: #FFC107;	
+}
+
 .project-c-line::before {
 	background-color: #2196F3;
 }
@@ -640,7 +653,9 @@ body {
 .download-resume:hover {
 	background: #0091EA;
 }
-/*------====== EXPERIENCE CONTEINER ======------*/
+/*-----------------------------------------*/
+/*------====== EXPERIENCE PAGE ======------*/
+/*-----------------------------------------*/
 .experience__cont {
 	width: 860px;
 	margin: 0 0 30px 0;
@@ -675,6 +690,9 @@ body {
 	padding: 16px 24px 16px 24px;
 	text-align: center;
 	background-color: #B0BEC5;
+}
+.time__education {
+	background-color: #BCAAA4;
 }
 .time__worked hr {
 	height: 2px;
@@ -905,7 +923,54 @@ body {
 	background-color: #424242;
 }
 
-/*--------------------------------------*/
+/*-----------------------------------------*/
 /*------====== EXPERIENCE PAGE ======------*/
-/*--------------------------------------*/
+/*-----------------------------------------*/
 
+/*-------------------------------------*/
+/*------====== SKILLS PAGE ======------*/
+/*-------------------------------------*/
+.skills__container {
+  padding: 0 90px 30px 90px;
+	min-height: 100px;
+	overflow: hidden;
+}
+.skill__type_name {
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: none;
+	color: #313131; 
+}
+.skill__card {
+	width: 100px;
+  height: 140px;
+  background: #f5f5f5;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+}
+.skill__card--image {
+	min-height: 100px;
+	min-height: 100px;
+	max-width: 100px;
+  max-height: 100px;
+  position: relative;
+  z-index: 1;  
+
+}
+.skill__card--image img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.skill-card--footer {
+  width: 100px;
+  height: 40px;
+  padding: 8px 0 8px 0;
+  text-align: center;
+  text-transform: none;
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(97,97,97);
+}
