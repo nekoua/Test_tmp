@@ -46,15 +46,15 @@ body {
 }
 /*------------ Shadow ------------*/
 .shadow {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .shadow-hv {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);	
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);	
 }
 
 .shadow-hv:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
@@ -66,10 +66,10 @@ body {
 	font-size: 18px;
 }
 .menu-conteiner {
-  width: 150px;
-  height: 150px;
+	width: 150px;
+	height: 150px;
 	margin: 0 10px 10px 0;
-  float: left;
+	float: left;
 }
 .menu-conteiner:nth-child(1) {
 	width: 310px;
@@ -233,120 +233,120 @@ body {
 	width: 310px;
 }
 .mask {
-   overflow: hidden;
-   height: 150px;
+	overflow: hidden;
+	height: 150px;
 }
 
 .slider-block ul {
 	margin: 0;
-  padding: 0;
-  position: relative;
+	padding: 0;
+	position: relative;
 }
 
 .slider-block li {
 	width: 310px;  /* Ширина изображения */
-  height: 150px; /* Высота изображения */
-  position: absolute;
-  top: 0px;	/* Исходное положение  (за пределами слайдера) */
-  list-style: none;
+	height: 150px; /* Высота изображения */
+	position: absolute;
+	top: 0px;	/* Исходное положение  (за пределами слайдера) */
+	list-style: none;
 }
 
 .mask li.firstanimation {
-   animation: cycle-1 25s linear infinite;
+	animation: cycle-1 25s linear infinite;
 }
 
 .mask li.secondanimation {
-   animation: cycle-2 25s linear infinite;
+	animation: cycle-2 25s linear infinite;
 }
 
 .mask li.thirdanimation {
-   animation: cycle-3 25s linear infinite;
+	animation: cycle-3 25s linear infinite;
 }
 
 .mask li.fourthanimation {
-   animation: cycle-4 25s linear infinite;
+	animation: cycle-4 25s linear infinite;
 }
 
 .mask li.fifthanimation {
-   animation: cycle-5 25s linear infinite;
+	animation: cycle-5 25s linear infinite;
 }
 
 @keyframes cycle-1 {
-   0%  { right: 0px; } /* При запуске слайдера, первое изображение уже видимо */
-   4%  { right: 0px; } /* Стартовая позиция */
-   16% { right: 0px; opacity:1; z-index:0; } /* С 4% до 16 % (3 секунды) изображение видимо */
-   20% { right: 325px; opacity: 0; z-index: 0; } /* с 16% до 20% (1 секунды)выход изображения*/
-   21% { right: -325px; opacity: 0; z-index: -1; } /* Возвращение на исходную позицию за пределами маски */
-   92% { right: -325px; opacity: 0; z-index: 0; }
-   96% { right: -325px; opacity: 0; } /* С 96% до 100% (1 секунда) – вход */
-   100%{ right: 0px; opacity: 1; }
+	0%  { right: 0px; } /* При запуске слайдера, первое изображение уже видимо */
+	4%  { right: 0px; } /* Стартовая позиция */
+	16% { right: 0px; opacity:1; z-index:0; } /* С 4% до 16 % (3 секунды) изображение видимо */
+	20% { right: 325px; opacity: 0; z-index: 0; } /* с 16% до 20% (1 секунды)выход изображения*/
+	21% { right: -325px; opacity: 0; z-index: -1; } /* Возвращение на исходную позицию за пределами маски */
+	92% { right: -325px; opacity: 0; z-index: 0; }
+	96% { right: -325px; opacity: 0; } /* С 96% до 100% (1 секунда) – вход */
+	100%{ right: 0px; opacity: 1; }
 }
 
 @keyframes cycle-2 {
-   0%  { right: -325px; opacity: 0; } /* Исходная позиция за пределами маски */
-   16% { right: -325px; opacity: 0; }/* Начало движения с 16% */
-   20% { right: 0px; opacity: 1; }
-   24% { right: 0px; opacity: 1; }  /* С 20% до 24% (в течении 1 секунды) — вход*/
-   36% { right: 0px; opacity: 1; z-index: 0; }   /* С 24% до 36 % (3 секунды) изображение видимо */
-   40% { right: 325px; opacity: 0; z-index: 0; } /* С 36% до 40% (1 секунда)— выход */
-   41% { right: -325px; opacity: 0; z-index: -1; }   /* Возврат на исходную позицию */
-   100%{ right: -325px; opacity: 0; z-index: -1; }
+	0%  { right: -325px; opacity: 0; } /* Исходная позиция за пределами маски */
+	16% { right: -325px; opacity: 0; }/* Начало движения с 16% */
+	20% { right: 0px; opacity: 1; }
+	24% { right: 0px; opacity: 1; }  /* С 20% до 24% (в течении 1 секунды) — вход*/
+	36% { right: 0px; opacity: 1; z-index: 0; }   /* С 24% до 36 % (3 секунды) изображение видимо */
+	40% { right: 325px; opacity: 0; z-index: 0; } /* С 36% до 40% (1 секунда)— выход */
+	41% { right: -325px; opacity: 0; z-index: -1; }   /* Возврат на исходную позицию */
+	100%{ right: -325px; opacity: 0; z-index: -1; }
 }
 
 @keyframes cycle-3 {
-   0%  { right: -325px; opacity: 0; }
-   36% { right: -325px; opacity: 0; }
-   40% { right: 0px; opacity: 1; }
-   44% { right: 0px; opacity: 1; }
-   56% { right: 0px; opacity: 1; }
-   60% { right: 325px; opacity: 0; z-index: 0; }
-   61% { right: -325px; opacity: 0; z-index: -1; }
-   100%{ right: -325px; opacity: 0; z-index: -1; }
+	0%  { right: -325px; opacity: 0; }
+	36% { right: -325px; opacity: 0; }
+	40% { right: 0px; opacity: 1; }
+	44% { right: 0px; opacity: 1; }
+	56% { right: 0px; opacity: 1; }
+	60% { right: 325px; opacity: 0; z-index: 0; }
+	61% { right: -325px; opacity: 0; z-index: -1; }
+	100%{ right: -325px; opacity: 0; z-index: -1; }
 }
 
 @keyframes cycle-4 {
-   0%  { right: -325px; opacity: 0; }
-   56% { right: -325px; opacity: 0; }
-   60% { right: 0px; opacity: 1; }
-   64% { right: 0px; opacity: 1; }
-   76% { right: 0px; opacity: 1; z-index: 0; }
-   80% { right: 325px; opacity: 0; z-index: 0; }
-   81% { right: -325px; opacity: 0; z-index: -1; }
-   100%{ right: -325px; opacity: 0; z-index: -1; }
+	0%  { right: -325px; opacity: 0; }
+	56% { right: -325px; opacity: 0; }
+	60% { right: 0px; opacity: 1; }
+	64% { right: 0px; opacity: 1; }
+	76% { right: 0px; opacity: 1; z-index: 0; }
+	80% { right: 325px; opacity: 0; z-index: 0; }
+	81% { right: -325px; opacity: 0; z-index: -1; }
+	100%{ right: -325px; opacity: 0; z-index: -1; }
 }
 @keyframes cycle-5 {
-   0%  { right: -325px; opacity: 0; }
-   76% { right: -325px; opacity: 0; }
-   80% { right: 0px; opacity: 1; }
-   84% { right: 0px; opacity: 1; }
-   96% { right: 0px; opacity: 1; z-index: 0; }
-   100%{ right: 325px; opacity: 0; z-index: 0; }
+	0%  { right: -325px; opacity: 0; }
+	76% { right: -325px; opacity: 0; }
+	80% { right: 0px; opacity: 1; }
+	84% { right: 0px; opacity: 1; }
+	96% { right: 0px; opacity: 1; z-index: 0; }
+	100%{ right: 325px; opacity: 0; z-index: 0; }
 }
 /* Индикатор выполнения */
 .progress-bar {
-   position: relative;
-   top: -5px;
-   width: 310px;
-   height: 5px;
-   background: #000;
-   animation: fullexpand 25s ease-out infinite;
+	position: relative;
+	top: -5px;
+	width: 310px;
+	height: 5px;
+	background: #000;
+	animation: fullexpand 25s ease-out infinite;
 }
 
 @keyframes fullexpand {
-   /* В этих ключевых кадрах анимация стационарна */
-   0%, 20%, 40%, 60%, 80%, 100% { width: 0%; opacity: 0; }
+	/* В этих ключевых кадрах анимация стационарна */
+	0%, 20%, 40%, 60%, 80%, 100% { width: 0%; opacity: 0; }
 
-   /* В этих — оживает */
-   4%, 24%, 44%, 64%, 84% { width: 0%; opacity: 0.3; }
+	/* В этих — оживает */
+	4%, 24%, 44%, 64%, 84% { width: 0%; opacity: 0.3; }
 
-   /* В этих — плавно заполняется */
-   16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
+	/* В этих — плавно заполняется */
+	16%, 36%, 56%, 76%, 96% { width: 100%; opacity: 0.7; }
 
-   /* В этих ключевых кадрах индикатор выполнения завершил свой путь */
-   17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
+	/* В этих ключевых кадрах индикатор выполнения завершил свой путь */
+	17%, 37%, 57%, 77%, 97% { width: 100%; opacity: 0.3; }
 
-   /* В этих ключевых кадрах индикатор выполнения исчезнет, а затем возобновит цикл */
-   18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+	/* В этих ключевых кадрах индикатор выполнения исчезнет, а затем возобновит цикл */
+	18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
 }
 /*------====== MAIN CONTENT ======------*/
 
@@ -454,7 +454,7 @@ body {
 .card-btn-conteiner {
 	position: absolute;
 	bottom: 0px;
-  border-top: 1px solid #9E9E9E;
+	border-top: 1px solid #9E9E9E;
 
 }
 .go-btn {
@@ -506,8 +506,8 @@ body {
 }
 .qualification-block {
 	width: 269px;
-  min-height: 522px;
-  margin: 0 26px 0 0;
+	min-height: 522px;
+	margin: 0 26px 0 0;
 	display: block;
 	float: left;
 }
@@ -595,49 +595,62 @@ body {
 	width: 106px;
 	height: 106px;
 	margin: 0px;
-	float: left;	
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.hobby-icon__box img {
+	max-width: 80%;
+	max-height: 80%;
+	visibility: hidden;
+}
+.hobby-icon__box:hover img {
+	visibility: visible;
+}
+
 .hobby-icon__box:nth-child(1):hover {
-		background: #43A047;
+	background: #43A047;
 }
 .hobby-icon__box:nth-child(2):hover {
-		background: #FDD835;
+	background: #FDD835;
 }
 .hobby-icon__box:nth-child(3):hover {
-		background: #00897B;
+	background: #00897B;
 }
 .hobby-icon__box:nth-child(4):hover {
-		background: #5E35B1;
+	background: #5E35B1;
 }
 .hobby-icon__box:nth-child(5):hover {
-		background: #F4511E;
+	background: #F4511E;
 }
 .hobby-icon__box:nth-child(6):hover {
-		background: #00BCD4;
+	background: #00BCD4;
 }
 .hobby-icon__box:nth-child(7):hover {
-		background: #D81B60;
+	background: #D81B60;
 }
 .hobby-icon__box:nth-child(8):hover {
-		background: #3949AB;
+	background: #3949AB;
 }
 .hobby-icon__box:nth-child(9):hover {
-		background: #E53935;
+	background: #E53935;
 }
 .hobby-icon__box:nth-child(10):hover {
-		background: #FB8C00;
+	background: #FB8C00;
 }
 .hobby-icon__box:nth-child(11):hover {
-		background: #546E7A;
+	background: #546E7A;
 }
 .hobby-icon__box:nth-child(12):hover {
-		background: #C0CA33;
+	background: #C0CA33;
 }
 .hobby-icon__box:nth-child(13):hover {
-		background: #6D4C41;
+	background: #6D4C41;
 }
 .hobby-icon__box:nth-child(14):hover {
-		background: #7CB342;
+	background: #7CB342;
 }
 
 /*------====== DOWNLOAD RESUME ======------*/
@@ -684,7 +697,7 @@ body {
 .time__worked {
 	display: block;
 	float: left;
- 	font-size: 22px;
+	font-size: 22px;
 	color: #ffffff;
 	margin: 0 30px 0 0;
 	padding: 16px 24px 16px 24px;
@@ -718,7 +731,7 @@ body {
 	font-weight: 300;
 	padding: 0 0 0 16px;
 }
- 
+
 .experience__cont .go-btn {
 	color: #673AB7;
 	width: 860px;
@@ -731,7 +744,7 @@ body {
 /*--------------------------------------*/
 /*------====== CONTACT PAGE ======------*/
 /*--------------------------------------*/
- 
+
 .name_header {
 	font-size: 92px;
 	line-height: 70px;
@@ -776,32 +789,32 @@ body {
 	top: 20px;
 	line-height: 16px;
 	-webkit-transition: all 0.3s ease-in-out;
- transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .feedback__text-fields:focus ~ .input-lable , .feedback__text-fields:valid ~ .input-lable {
- 	color: #1DE9B6;
- 	font-size: 14px;
- 	line-height: 15px;
- 	-webkit-transform: translateY(-20px);
- 	transform: translateY(-20px);
+	color: #1DE9B6;
+	font-size: 14px;
+	line-height: 15px;
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
 }
 
 .feedback__text-fields {
-  width: 752px;
-  height: 16px;
+	width: 752px;
+	height: 16px;
 	padding: 8px 0 8px 0;  
-  display: block;
-  border: none;
-  font-size: 16px;
-  border-bottom: 1px solid #1DE9B6;
-  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1DE9B6 4%);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1DE9B6 4%);
-  background-position: 50% 0;
-  background-size: 0px 100%;
-  background-repeat: no-repeat;
-  color: #009688;
+	display: block;
+	border: none;
+	font-size: 16px;
+	border-bottom: 1px solid #1DE9B6;
+	-webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #1DE9B6 4%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1DE9B6 4%);
+	background-position: 50% 0;
+	background-size: 0px 100%;
+	background-repeat: no-repeat;
+	color: #009688;
 	line-height: 22px;
 	position: relative;
 }
@@ -811,41 +824,41 @@ body {
 	background-size: 0px 103%;
 }
 .feedback__text-fields:focus, .feedback__text-fields:valid {
- box-shadow: none;
- outline: none;
- background-position: 50% 0;
- background-size: 100% 100%;
+	box-shadow: none;
+	outline: none;
+	background-position: 50% 0;
+	background-size: 100% 100%;
 }
 .input__conteiner:nth-child(5) .feedback__text-fields:focus,
- .input__conteiner:nth-child(5) .feedback__text-fields:valid {
- background-position: 50% 50%;
- background-size: 100% 108%;	
- }
+.input__conteiner:nth-child(5) .feedback__text-fields:valid {
+	background-position: 50% 50%;
+	background-size: 100% 108%;	
+}
 
 .btn-form {
 	display: inline-block;	
-  margin: 12px;
-  padding: 16px 3em;
-  
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 3px;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  background: #ECEFF1;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.5);
-  border: none; 
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
+	margin: 12px;
+	padding: 16px 3em;
+	
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 3px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	background: #ECEFF1;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	border: none; 
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
 	float: right;
 }
 .btn-form:hover {
-  box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
+	box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
 	background: #00C853;
 	color: #ffffff;
 }
@@ -886,11 +899,11 @@ body {
 	float: left;
 	margin: 17px;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
-  border: none;
+	border: none;
 	border-radius: 100%;
 }
 .social-btn:hover {
-  box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
+	box-shadow: 1px 6px 15px rgba(0,0,0,0.5);
 	background: #B0BEC5;
 }
 .social-btn-link:nth-child(2) .social-btn-icon {
@@ -931,7 +944,7 @@ body {
 /*------====== SKILLS PAGE ======------*/
 /*-------------------------------------*/
 .skills__container {
-  padding: 0 90px 30px 90px;
+	padding: 0 90px 30px 90px;
 	min-height: 100px;
 	overflow: hidden;
 }
@@ -943,34 +956,34 @@ body {
 }
 .skill__card {
 	width: 100px;
-  height: 140px;
-  background: #f5f5f5;
-  margin: 0 10px 10px 0;
-  display: inline-block;
-  text-align: center;
-  overflow: hidden;
+	height: 140px;
+	background: #f5f5f5;
+	margin: 0 10px 10px 0;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
 }
 .skill__card--image {
 	min-height: 100px;
 	min-height: 100px;
 	max-width: 100px;
-  max-height: 100px;
-  position: relative;
-  z-index: 1;  
+	max-height: 100px;
+	position: relative;
+	z-index: 1;  
 
 }
 .skill__card--image img {
-  max-width: 100px;
-  max-height: 100px;
+	max-width: 100px;
+	max-height: 100px;
 }
 .skill-card--footer {
-  width: 100px;
-  height: 40px;
-  padding: 8px 0 8px 0;
-  text-align: center;
-  text-transform: none;
-  line-height: 21px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(97,97,97);
+	width: 100px;
+	height: 40px;
+	padding: 8px 0 8px 0;
+	text-align: center;
+	text-transform: none;
+	line-height: 21px;
+	font-size: 16px;
+	font-weight: 600;
+	color: rgb(97,97,97);
 }
