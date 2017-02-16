@@ -5,6 +5,11 @@ body {
 	font-family: "Roboto", sans-serif;	
 	text-transform: uppercase;
 	color: #000000;
+	padding: 0;
+	margin: 0;
+	background: url(C:/Users/S.Kotlyarov/Pictures/Tmp_material_icon/Material-Design-17.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 .clearfix {
 	content: "";
@@ -15,13 +20,11 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	display: block;
-	background-color: black;
 }
 .main-container {
 	width: 1200px;
 	margin: 0 0 30px 0;
 	padding: 80px 0 0 0;
-	background-color: grey;
 }
 .main-navigation {
 	width: 310px;
