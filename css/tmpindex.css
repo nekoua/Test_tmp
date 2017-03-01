@@ -364,6 +364,9 @@ body {
 	min-height: 515px;
 	margin: 0 0 30px 0;
 }
+.block_botom {
+	padding-bottom: 80px;
+}
 .main-contant__header {
 	margin: 44px 54px 44px 54px;
 	padding: 0 0 0 32px;
@@ -411,12 +414,11 @@ body {
 .skills-c-line {
 	border-color: #FFC107;	
 }
-
 .project-c-line::before {
-	background-color: #2196F3;
+	background-color: #3F51B5;
 }
 .project-c-line {
-	border-color: #2196F3;	
+	border-color: #3F51B5;	
 }
 
 /*------====== WORKBENCH SECTION ======------*/
