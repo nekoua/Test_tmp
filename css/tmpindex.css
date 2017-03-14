@@ -992,3 +992,189 @@ body {
 	font-weight: 600;
 	color: rgb(97,97,97);
 }
+
+
+/*-----------------------------------------*/
+/*------======  PROGECTS PAGE  ======------*/
+/*-----------------------------------------*/
+
+.projects_cont {
+	width: 95%;
+	margin: 0 auto;
+	position: relative;	
+}
+.nav {
+	position: relative;
+	margin: 0 auto;
+	height: 48px;
+}
+.nav_frame {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+.tab_strip {
+	height: 100%;
+	width: 200%;
+	position: relative; 
+	transition: .5s;
+}
+.overflow {
+	overflow: hidden;
+}
+.tab_strip label {
+	width: 13%;
+	display: block;
+	float: left;
+	height: 100%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 350%;
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+}
+.slide {
+	background: red;
+	width: calc(91% / 7);
+	height: 4%;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	-webkit-transition: left 0.3s ease-out;
+	transition: left 0.3s ease-out;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ .nav .slide {
+	left: calc((91% / 7) * 0);
+}
+input[type="radio"]:nth-of-type(2):checked ~ .nav .slide {
+	left: calc((91% / 7) * 1);
+}
+input[type="radio"]:nth-of-type(3):checked ~ .nav .slide {
+	left: calc((91% / 7) * 2);
+}
+input[type="radio"]:nth-of-type(4):checked ~ .nav .slide {
+	left: calc((91% / 7) * 3);
+}
+input[type="radio"]:nth-of-type(5):checked ~ .nav .slide {
+	left: calc((91% / 7) * 4);
+}
+input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
+	left: calc((91% / 7) * 5);
+}
+[class^="projects_cont"] .controls_label {
+	cursor: pointer;
+	font-weight: bold;
+}
+[class^="projects_cont"] input:nth-of-type(1):checked ~ .controls_label:nth-of-type(2):after,
+[class^="projects_cont"] input:nth-of-type(2):checked ~ .controls_label:nth-of-type(3):after,
+[class^="projects_cont"] input:nth-of-type(3):checked ~ .controls_label:nth-of-type(4):after,
+[class^="projects_cont"] input:nth-of-type(4):checked ~ .controls_label:nth-of-type(5):after,
+[class^="projects_cont"] input:nth-of-type(5):checked ~ .controls_label:nth-of-type(6):after,
+[class^="projects_cont"] input:nth-of-type(6):checked ~ .controls_label:nth-of-type(7):after {
+	content: url(../img/icon/svg/ic_keyboard_arrow_right_black_24px.svg);
+	position: absolute;
+	display: block;
+	right: 0%;
+	width: 5%;
+	top: 0;
+	bottom: 0;
+	padding: 1.7% 0 0;
+}
+[class^="projects_cont"] input:nth-of-type(2):checked ~ .controls_label:nth-of-type(1):after,
+[class^="projects_cont"] input:nth-of-type(3):checked ~ .controls_label:nth-of-type(2):after,
+[class^="projects_cont"] input:nth-of-type(4):checked ~ .controls_label:nth-of-type(3):after,
+[class^="projects_cont"] input:nth-of-type(5):checked ~ .controls_label:nth-of-type(4):after,
+[class^="projects_cont"] input:nth-of-type(6):checked ~ .controls_label:nth-of-type(5):after,
+[class^="projects_cont"] input:nth-of-type(7):checked ~ .controls_label:nth-of-type(6):after {
+	content: url(../img/icon/svg/ic_keyboard_arrow_left_black_24px.svg);
+	position: absolute;
+	width: 5%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	padding: 1.7% 0 0 1.7%;
+}
+[class^="projects_cont"] input:nth-of-type(2):checked ~ .nav_frame .tab_strip {margin-left: -10%;}
+[class^="projects_cont"] input:nth-of-type(3):checked ~ .nav_frame .tab_strip {margin-left: -30%;}
+[class^="projects_cont"] input:nth-of-type(4):checked ~ .nav_frame .tab_strip {margin-left: -50%;}
+[class^="projects_cont"] input:nth-of-type(5):checked ~ .nav_frame .tab_strip {margin-left: -60%;}
+.content_cont {
+	height: auto;
+	width: 100%;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background: #fefefe;
+	box-sizing: border-box;
+	padding: 5% 5% 1% 5%;
+	transition: 10s;
+
+}
+.content_cont div {
+	position: relative;
+	float: left;
+	width: 0;
+	height: 0;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	background: #fefefe;
+	display: none;
+}
+.content_cont div h2 {
+	margin-top: 0;
+	color: #4477CC;
+}
+.content_cont div p {
+	font-size: 14px;
+	line-height: 22px;
+	text-align: left;
+	margin: 0;
+	color: #777;
+}
+
+.projects_cont .tab-selector-1:checked ~ .content_cont .content-1,
+.projects_cont .tab-selector-2:checked ~ .content_cont .content-2,
+.projects_cont .tab-selector-3:checked ~ .content_cont .content-3,
+.projects_cont .tab-selector-4:checked ~ .content_cont .content-4,
+.projects_cont .tab-selector-5:checked ~ .content_cont .content-5 {
+	z-index: 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: 10s;
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple::after {
+  content: "";
+  background: rgba(207, 207, 207, 0.3);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  opacity: 0;
+  transition: all 0.7s;
+  z-index: 1;
+}
+.ripple:active::after {
+  height: 10px;
+  width: 10px;
+  opacity: 1;
+  transition: 0s;
+}
