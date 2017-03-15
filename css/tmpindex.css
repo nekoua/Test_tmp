@@ -21,6 +21,17 @@ body {
 	margin: 0 auto;
 	display: block;
 }
+.alert {
+	position: absolute;
+	background: red;
+	top: 0;
+	left: 30%;
+	right: 30%;
+	text-align: center;
+	font-size: 30px;
+	color: #ffffff;
+	padding: 0.5%;
+}
 .main-container {
 	width: 1200px;
 	margin: 0 0 30px 0;
@@ -607,8 +618,8 @@ body {
 }
 
 .hobby-icon__box img {
-	max-width: 80%;
-	max-height: 80%;
+	max-width: 50%;
+	max-height: 50%;
 	visibility: hidden;
 }
 .hobby-icon__box:hover img {
@@ -697,7 +708,7 @@ body {
 	overflow: hidden;
 	border-radius: 3px;
 	display: flex;
-	background-color: #EEEEEE;
+	background-color: #FAFAFA;
 }
 .time__worked {
 	display: block;
@@ -710,7 +721,7 @@ body {
 	background-color: #B0BEC5;
 }
 .time__education {
-	background-color: #BCAAA4;
+	background-color: #7E57C2;
 }
 .time__worked hr {
 	height: 2px;
@@ -1108,10 +1119,9 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 	float: left;
 	position: relative;
 	z-index: 5;
-	background: #fefefe;
 	box-sizing: border-box;
 	padding: 5% 5% 1% 5%;
-	transition: 10s;
+	transition: 20s;
 
 }
 .content_cont div {
@@ -1120,9 +1130,10 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 	width: 0;
 	height: 0;
 	box-sizing: border-box;
+	padding: 5%;
 	top: 0;
 	left: 0;
-	background: #fefefe;
+	background: #FAFAFA;
 	display: none;
 }
 .content_cont div h2 {
