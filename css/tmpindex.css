@@ -7,7 +7,7 @@ body {
 	color: #000000;
 	padding: 0;
 	margin: 0;
-	background: url(C:/Users/S.Kotlyarov/Pictures/Tmp_material_icon/Material-Design-17.jpg) no-repeat center center;
+	background: url(..//img/background/OGQFE30.jpg) no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -615,15 +615,19 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .hobby-icon__box img {
 	max-width: 50%;
 	max-height: 50%;
-	visibility: hidden;
+	margin: 0 auto;
+	visibility: visible;
+	display: block;
 }
 .hobby-icon__box:hover img {
 	visibility: visible;
+	display: block;
 }
 
 .hobby-icon__box:nth-child(1):hover {
@@ -1010,7 +1014,7 @@ body {
 /*-----------------------------------------*/
 
 .projects_cont {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;	
 }
@@ -1121,20 +1125,20 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 	z-index: 5;
 	box-sizing: border-box;
 	padding: 5% 5% 1% 5%;
-	transition: 20s;
-
+	transition: 10s;
 }
 .content_cont div {
 	position: relative;
 	float: left;
+	/*
 	width: 0;
 	height: 0;
 	box-sizing: border-box;
-	padding: 5%;
 	top: 0;
-	left: 0;
+	left: 0;*/
 	background: #FAFAFA;
 	display: none;
+	padding: 5%;
 }
 .content_cont div h2 {
 	margin-top: 0;
@@ -1157,7 +1161,6 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	opacity: 1;
-	width: 100%;
 	height: auto;
 	display: block;
 	transition: 10s;
