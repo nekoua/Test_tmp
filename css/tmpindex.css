@@ -621,9 +621,6 @@ body {
 .hobby-icon__box img {
 	max-width: 50%;
 	max-height: 50%;
-	margin: 0 auto;
-	visibility: visible;
-	display: block;
 }
 .hobby-icon__box:hover img {
 	visibility: visible;
