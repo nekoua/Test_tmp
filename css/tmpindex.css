@@ -687,14 +687,14 @@ body {
 .download-resume {
 	width: 860px;
 	line-height: 34px;
-	background: #01579B;
+	background: #2979FF;
 	display: table-cell;
 	font-weight: 600;
 	font-size: 32px;
 	color: #ffffff;	
 }
 .download-resume:hover {
-	background: #0091EA;
+	background: #2962FF;
 }
 /*-----------------------------------------*/
 /*------====== EXPERIENCE PAGE ======------*/
@@ -1285,14 +1285,18 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
   opacity: 1;
   transition: 0s;
 }
-
 /**/
 /**/
 /**/
 .download_form_container {
 	width: 400px;
 	margin: 0 auto;
-	margin-top: 5%;
+	/*position: fixed;*/
+	display: none;
+	top: 20%;
+	left: 40%;
+	right: 40%;
+	z-index: 100;
 }
 .download_form_header {
 	color: #ffffff;
