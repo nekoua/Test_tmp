@@ -1291,6 +1291,7 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 /**/
 .download_form_container {
 	width: 500px;
+	margin: 0 auto;
 }
 .download_form_header {
 	color: #fff;
@@ -1306,7 +1307,6 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 }
 div.tab-frame {
 	background: orange;
-	
 	margin: 0 auto;
 }
 div.tab-frame input{
@@ -1328,16 +1328,18 @@ div.tab-frame input:checked + label{
 }
 div.tab-frame div.tab{
 	display:none;
-	padding:5px 10px;
 	clear:left
 }
 div.tab-frame input:nth-of-type(1):checked ~ .tab:nth-of-type(1),
 div.tab-frame input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
 div.tab-frame input:nth-of-type(3):checked ~ .tab:nth-of-type(3){
 	display:block;
+	height: 300px;
+	text-align: center;
 }
-body{
-	width:600px;
-	margin:20px auto;
-	font-family:Arial;
+.tab a {
+	display: block;
+	background: cyan;
+	margin-bottom: 10px;
+	text-decoration: none;
 }
