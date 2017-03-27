@@ -6,10 +6,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">	
 	<link rel="stylesheet" type="text/css" href="css/tmpindex.css">
+	<link rel="stylesheet" type="text/css" href="css/modal_style.css">
 </head>
 <body>
 	<div class="row">
-  <i class="alert">The site is under construction</i>
+		<i class="alert">The site is under construction</i>
 		<div class="main-container clearfix">
 			<aside class="main-navigation">
 				<nav class="main-menu">
@@ -164,6 +165,17 @@
 							
 							<article class="experience__card shadow clearfix">
 								<div class="time__worked">
+									<time>24.03.2015</time><hr>
+									<time>present</time>
+								</div>
+								<div class="company__info">
+									<h4>ZAPORIZHYAOBLENERGO</h4>
+									<h5>System engineer</h5>
+								</div>
+							</article>
+
+							<article class="experience__card shadow clearfix">
+								<div class="time__worked">
 									<time>24.07.2012</time><hr>
 									<time>25.07.2014</time>
 								</div>
@@ -173,16 +185,7 @@
 								</div>
 							</article>
 
-							<article class="experience__card shadow clearfix">
-								<div class="time__worked">
-									<time>24.03.2015</time><hr>
-									<time>present</time>
-								</div>
-								<div class="company__info">
-									<h4>ZAPORIZHYAOBLENERGO</h4>
-									<h5>System engineer</h5>
-								</div>
-							</article>
+							
 
 							<div class="card-btn-conteiner">
 								<a class="go-btn shadow-hv" href="experience.html">View</a>
@@ -196,33 +199,62 @@
 							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Painting.png" width="50%" height="50%" alt=""></div>
 							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Tranning.png" width="50%" height="50%" alt=""></div>
 							<div class="hobby-icon__box shadow-hv">
-							<img src="img/Interests_icon/Cooking.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Music.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Puzzle.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Gaming.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Biking.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Coffee.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Carpentry.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Voleyball.png" width="50%" height="40%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Audio-book.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Camping.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Muving.png" width="50%" height="50%" alt=""></div>
-							<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Cats.png" width="50%" height="50%" alt=""></div>
+								<img src="img/Interests_icon/Cooking.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Music.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Puzzle.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Gaming.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Biking.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Coffee.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Carpentry.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Voleyball.png" width="50%" height="40%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Audio-book.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Camping.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Muving.png" width="50%" height="50%" alt=""></div>
+								<div class="hobby-icon__box shadow-hv"><img src="img/Interests_icon/Cats.png" width="50%" height="50%" alt=""></div>
 
+							</div>
+						</section>
+
+						<div class="resume-btn-block shadow-hv-block" >
+							<a class="download-resume go-btn" href="#modal_download">DOWNLOAD RESUME</a>
 						</div>
-					</section>
+					</main>
+				</div>		
 
-					<div class="resume-btn-block shadow-hv-block" >
-						<a class="download-resume go-btn" href="#">DOWNLOAD RESUME</a>
-					</div>
-				</main>
-			</div>		
-
-		</div>
-		<footer class="row shadow-block">
-			<div class="block-former main-footer">
-				<p>&#169 Copyright</p>
 			</div>
-		</footer>
-	</body>
-	</html>
+			<!-- Download block -->
+			<div id="modal_download" class="modal_download">
+				<div class="download_form_container shadow-block">
+					<header class="download_form_header">
+						<h3>DOWNLOAD RESUME</h3>
+					</header>
+					<div class="tab-frame">
+						<input type="radio" checked name="tab" id="eng">
+						<label for="eng">ENG</label>
+
+						<input type="radio" name="tab" id="rus">
+						<label for="rus">RUS</label>
+
+						<div class="tab">
+							<a class="btn_file_download shadow-hv" href="file/resume/Sergii_Kotliarov_eng.doc">DOC</a>
+							<a class="btn_file_download shadow-hv" href="file/resume/Sergii_Kotliarov_eng.docx">DOCX</a>
+							<a class="btn_file_download shadow-hv" href="file/resume/Sergii_Kotliarov_eng.pdf">PDF</a>
+							<a class="btn_file_download shadow-hv" href="#close">Close</a> 
+						</div>
+						<div class="tab">
+							<a class="btn_file_download shadow-hv" href="file/resume/Sergii_Kotliarov_rus.doc">DOC</a>
+							<a class="btn_file_download shadow-hv" href="file/resume/Sergii_Kotliarov_rus.docx">DOCX</a>
+							<a class="btn_file_download shadow-hv" href="file/resume/Sergii_Kotliarov_rus.pdf">PDF</a>
+							<a class="btn_file_download shadow-hv" href="#close">Close</a>
+						</div>
+					</div>  
+				</div>
+				<!-- Download block end -->
+			</div>
+			<footer class="row shadow-block">
+				<div class="block-former main-footer">
+					<p>&#169 Copyright</p>
+				</div>
+			</footer>
+		</body>
+		</html>
