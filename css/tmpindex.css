@@ -510,18 +510,18 @@ body {
 	background: #3F51B5;
 }
 .workbench-block:nth-child(2), .workbench-block:nth-child(2) a  {
-	color: #009688;
+	color: #4CAF50;
 	width: 415px;
 }
 .workbench-block:nth-child(2) .go-btn:hover {
-	background: #009688;
+	background: #4CAF50;
 	color: #ffffff;	
 }
 .workbench-block:nth-child(2) p {
-	border-color: #009688;
+	border-color: #4CAF50;
 }
 .workbench-block:nth-child(2)::before {
-	background: #009688;
+	background: #4CAF50;
 }
 /*------------------------------------*/
 /*------====== ABOUT PAGE ======------*/
@@ -733,6 +733,7 @@ body {
 	padding: 16px 24px 16px 24px;
 	text-align: center;
 	background-color: #26A69A;
+	background-color: #607D8B;
 }
 .time__education {
 	background-color: #7E57C2;
@@ -1188,6 +1189,10 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 	text-align: center;
 	cursor: pointer;
 }
+/*.img_cont img:active {
+	max-width: 100px;
+	max-height: 100px;
+}*/
 .project_name {
 	display: block;
 }
