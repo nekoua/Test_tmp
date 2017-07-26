@@ -627,17 +627,14 @@ body {
 	justify-content: center;
 	overflow: hidden;
 }
-
 .hobby-icon__box img {
 	max-width: 50%;
 	max-height: 50%;
-	
 }
 .hobby-icon__box:hover img {
 	visibility: visible;
 	text-align: center;
 }
-
 .hobby-icon__box:nth-child(1):hover {
 	background: #43A047;
 }
@@ -680,7 +677,6 @@ body {
 .hobby-icon__box:nth-child(14):hover {
 	background: #7CB342;
 }
-
 /*------====== DOWNLOAD RESUME ======------*/
 .download-resume {
 	width: 860px;
@@ -742,7 +738,6 @@ body {
 	background: #ffffff;
 	margin: 10px 16px 10px 16px;
 }
-
 .company__info {
 	float: right;
 	padding: 0 30px 10px 30px;
@@ -760,7 +755,6 @@ body {
 	font-weight: 300;
 	padding: 0 0 0 16px;
 }
-
 .experience__cont .go-btn {
 	color: #673AB7;
 	width: 860px;
@@ -769,11 +763,9 @@ body {
 	background-color: #673AB7;
 	color: #ffffff;
 }
-
 /*--------------------------------------*/
 /*------====== CONTACT PAGE ======------*/
 /*--------------------------------------*/
-
 .name_header {
 	font-size: 92px;
 	line-height: 70px;
@@ -786,7 +778,6 @@ body {
 	line-height: 44px;
 	font-weight: 300;
 }
-
 .contact__block-name {
 	line-height: 34px;
 	font-size: 34px;
@@ -805,7 +796,6 @@ body {
 	border: none;
 	position: relative;
 }
-
 .input__conteiner {
 	position: relative;
 	margin: 0 0 24px 0;
@@ -827,7 +817,6 @@ body {
 	-webkit-transform: translateY(-20px);
 	transform: translateY(-20px);
 }
-
 .feedback__text-fields {
 	width: 752px;
 	height: 16px;
@@ -847,7 +836,6 @@ body {
 	line-height: 22px;
 	position: relative;
 }
-
 .input__conteiner:nth-child(5) .feedback__text-fields {
 	min-height: 165px;
 	background-size: 0px 103%;
@@ -863,12 +851,10 @@ body {
 	background-position: 50% 50%;
 	background-size: 100% 108%;	
 }
-
 .btn-form {
 	display: inline-block;	
 	margin: 12px;
 	padding: 16px 3em;
-	
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -898,7 +884,6 @@ body {
 	border-radius: 50%;
 	position: absolute;
 	top: 2em;
-	
 	line-height: 10%;
 	transition: 0.1s;
 }
@@ -906,8 +891,6 @@ body {
 	width: 500px;
 	height: 500px;
 }
-
-
 /*------====== SOCIAL BLOCK ======------*/
 .social-conteiner {
 	width: 860px;
@@ -919,7 +902,6 @@ body {
 	padding: 16px 0px 0 0px;
 	border: none;
 }
-
 .social-btn {
 	background-color: #CFD8DC;
 	display: block;
@@ -959,7 +941,6 @@ body {
 .social-btn-link:nth-child(8) .social-btn-icon {
 	background: url('../img/icon/web_png/material_social_icon_set.png') no-repeat 84% 50%;	
 }
-
 .main-footer {	
 	height: 50px;
 	background: #E0E0E0;
@@ -970,7 +951,6 @@ body {
 .main-footer::before {
 	background-color: #424242;
 }
-
 /*-----------------------------------------*/
 /*------====== EXPERIENCE PAGE ======------*/
 /*-----------------------------------------*/
@@ -1005,7 +985,6 @@ body {
 	max-height: 100px;
 	position: relative;
 	z-index: 1;  
-
 }
 .skill__card--image img {
 	max-width: 100px;
@@ -1022,12 +1001,9 @@ body {
 	font-weight: 600;
 	color: rgb(97,97,97);
 }
-
-
 /*-----------------------------------------*/
 /*------======  PROJECTS PAGE  ======------*/
 /*-----------------------------------------*/
-
 .projects_cont {
 	width: 100%;
 	margin: 0 auto;
@@ -1076,7 +1052,6 @@ body {
 	-webkit-transition: left 0.3s ease-out;
 	transition: left 0.3s ease-out;
 }
-
 input[type="radio"]:nth-of-type(1):checked ~ .nav .slide {
 	left: calc((91% / 7) * 0);
 }
@@ -1177,20 +1152,18 @@ input[type="radio"]:nth-of-type(6):checked ~ .nav .slide {
 	width: 109%;
 	height: 100%;
 }
-.img_cont img {
-	
+.img_colum a {
+	width: 200px;
 	height: 200px;
+}
+.img_cont img {
 	max-width: 200px;
 	background: #999999;
 	display: block;
-	margin: 0 auto 16px;
+	margin: 0 0 16px 0;
 	text-align: center;
 	cursor: pointer;
 }
-/*.img_cont img:active {
-	max-width: 100px;
-	max-height: 100px;
-}*/
 .project_name {
 	display: block;
 }
