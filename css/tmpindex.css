@@ -836,6 +836,11 @@ body {
 	line-height: 22px;
 	position: relative;
 }
+.feedback__text-fields::placeholder {
+	color: #777777;
+	text-align: center;
+	margin: 0 auto;
+}
 .input__conteiner:nth-child(5) .feedback__text-fields {
 	min-height: 165px;
 	background-size: 0px 103%;
