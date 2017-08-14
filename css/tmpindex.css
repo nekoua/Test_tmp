@@ -385,7 +385,7 @@ body {
 	min-height: 515px;
 	margin: 0 0 30px 0;
 }
-/*------====== NEWS SLIDER ======------*/
+/*------====== MAIN BANER SLIDER ======------*/
 
 .main-slider-block {
 	position: relative;
@@ -979,6 +979,9 @@ body {
 .input__conteiner:nth-child(5) .feedback__text-fields:valid {
 	background-position: 50% 50%;
 	background-size: 100% 108%;	
+}
+.contact-captcha-cont {
+	float: left;
 }
 .btn-form {
 	display: inline-block;	
